@@ -1,0 +1,15 @@
+.bgImg {
+    background-image: url(./images/bg.avif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.container {
+    padding-top: 140px;
+    text-align: center;
+    /* opacity: 40%; */
+}
+

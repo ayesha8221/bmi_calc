@@ -25,6 +25,7 @@ function calculate() {
         }
 }
 
+
 // function to clear everything
 function clr() {
     document.getElementById('weight').value= ""
