@@ -9,23 +9,20 @@ function calculate() {
     let result = (weight / (height * height) * 10000)
          document.getElementById('onscreen').innerHTML= result.toFixed(1);
 
-        if (result.toFixed(1) < 18.4 || result.toFixed(1) >= (18.5, 24.9)) {
+        if (result.toFixed(1) < 18.4) {
             document.getElementById("onscreen").innerHTML = 'Your BMI is '+result.toFixed(1)+'. Unfortunately you are underweight :(';
             
         } 
-        else {
+        else if (result.toFixed(1) >= (18,5) && result.toFixed(1) <=24.9){
             document.getElementById("onscreen").innerHTML = "Good job! Your BMI is "+result.toFixed(1)+". Your body weight is normal.";
         }
+        else if (result.toFixed(1) >= 25 && result.toFixed(1) <= 29.9) {
+            document.getElementById("onscreen").innerHTML = 'Your BMI is '+result.toFixed(1)+'. Unfortunately you are overweight. :(';
+        } 
 
-        // (result >= (25, 29.9) || result >= 30) ? ". Unfortunately you are overweight. :(":". You are obese!"
-        // document.getElementById("onscreen").innerHTML = "Your BMI is "+result;
-        // if (result >= (25, 29.9) || result >= 30) {
-        //     document.getElementById("onscreen").innerHTML = 'Your BMI is '+result+'. Unfortunately you are overweight. :(';
-        // } 
-
-        // else {
-        //     document.getElementById("onscreen").innerHTML = 'Your BMI is '+result+'. You are obese!';
-        // }
+        else {
+            document.getElementById("onscreen").innerHTML = 'Your BMI is '+result.toFixed(1)+'. You are obese!';
+        }
 }
 
 // function to clear everything
@@ -35,5 +32,4 @@ function clr() {
     document.getElementById('onscreen').innerHTML= ""
 }
 
-// function for one decimal place
 
