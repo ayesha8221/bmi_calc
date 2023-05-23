@@ -9,21 +9,23 @@
 </head>
 <body class="bgImg">
     <div class="container">
-    <h1>Health is Wealth<br>Calculate your Body Mass Index now!</h1>
+    <h3>Health is Wealth<br>Calculate your Body Mass Index now!</h3>
     <div id="onscreen"></div>
-    <div>
-        <h4>Weight</h4>
-        <input type="text" id="weight" value="">
+        <div>
+            <h3>Age</h3>
+            <input type="text" id="Age" value="" placeholder="35">
+        </div>
+        <div>
+        <h3>Weight </h3>
+        <input type="text" id="weight" value="" placeholder="kilograms">
     </div>
     <div>
-        <h4>Height</h4>
-        <input type="text" id="height" value="">
+        <h3>Height</h3>
+        <input type="text" id="height" value="" placeholder="centimeters">
     </div>
-    <div>
-        <button onclick="calculate()">Calculate</button>
-    </div>
-    <div>
-        <button onclick="clr()">Clear</button>
+    <div class="butn">
+        <button class="calc" onclick="calculate()">Calculate</button>
+        <button  class="clr" onclick="clr()">Clear</button>
     </div>
 </div>
 <script src="./script/index.js"></script>

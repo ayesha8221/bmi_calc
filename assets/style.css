@@ -1,15 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@600&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@600;700&family=Montserrat&display=swap');
+
+html, body {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Martel', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .bgImg {
     background-image: url(./images/bg.avif);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    backdrop-filter: blur(8px);
 }
 
 .container {
-    padding-top: 140px;
-    text-align: center;
-    /* opacity: 40%; */
+    /* padding-top: 140px; */
+    /* display: flex; */
+    /* justify-items: center; */
+    /* text-align: center; */
+    /* filter: contrast(8px); */
+    /* border: solid; */
+    border: solid;
+    width: 500px;
+    padding-bottom: 15px;
 }
 
+/* input text */
+#Age, #weight, #height {
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+}
+
+/* buttons */
+.calc, .clr {
+    width: 70px;
+    height: 30px;
+    padding-right: 10px;
+    border-radius: 40px;
+    background-color: rgb(133, 177, 255);
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+/* button animations */
+.clr:hover {
+    background-color: rgb(16, 106, 186);
+}
+
+.clr:active {
+    box-shadow: 0 2px ;
+    transform: translateX(1px);
+}
+.calc:active {
+    box-shadow: 0 2px ;
+    transform: translateX(1px);
+}
+
+.calc:hover {
+    background-color: rgb(16, 106, 186);
+}
+
+div.button{
+    padding-top: 10px;
+
+}
+
+h3 {
+    color: rgb(140, 228, 255);
+    text-shadow: 1px 1px 1px black;
+}
+
+.butn {
+    padding-top: 15px;
+}
+ 
+#onscreen {
+    color: black;
+    text-shadow: 1px 1px 1px grey;
+}
